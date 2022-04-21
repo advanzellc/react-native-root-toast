@@ -27,7 +27,7 @@ declare module "react-native-root-toast"{
     }
 
     export default class Toast extends React.Component<ToastProps>{
-        static show:(message:string,options?:ToastOptions)=>any;
+        static show:(children:React.ReactNode,options?:ToastOptions)=>any;
         static hide:(toast:any)=>void;
     }
 
